@@ -1,0 +1,703 @@
+/* ----- COLORS ----- */
+/* cyan: #008484
+   opaque white: #eeeeee
+*/
+
+/* ----------------------------------------- */
+/* ----- BASIC ----- */
+/* ----------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    background-color: #fff;
+    color: #171717;
+    font-family: 'Raleway', 'Arial', 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+/* ----------------------------------------- */
+/* ----- REUSABLE ----- */
+/* ----------------------------------------- */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 180%;
+}
+
+h2:after {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    content: "";
+    background-color: #008484;
+    height: 2px;
+    width: 200px;
+}
+
+h3 {
+    display: inline-block;
+    font-size: 120%;
+    padding: 5px;
+    margin-bottom: 10px;
+
+}
+
+h4 {
+
+    font-size: 110%;
+    color: #5d5d5d;
+}
+
+/* Alternalte style
+
+background: #008484;
+border-radius: 3px;
+color: #eeeeee;
+*/
+
+
+/* ----- BUTTON ----- */
+
+.btn,
+input[type=submit] {
+    color: #eeeeee;
+    background-color: #008484;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #005454;
+}
+
+input[type=submit] {
+    border: 0;
+    width: 100%;
+    margin-left: 2%;
+    cursor: pointer;
+
+}
+
+.btn-detail {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 80%;
+}
+
+/* ----------------------------------------- */
+/* ----- HEADER ----- */
+/* ----------------------------------------- */
+
+/* ----- HEADING & NAVIGATION ----- */
+
+.logo {
+    float: left;
+    height: 70px;
+    width: auto;
+
+}
+
+.main-nav {
+    float: right;
+
+}
+
+.main-nav li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    color: #eeeeee;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    text-decoration: none;
+    color: #eeeeee;
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 5px;
+}
+
+nav {
+    background: #001a17;
+    height: 8vh;
+
+}
+
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.heading ul {
+    float: left;
+}
+
+.heading ul li {
+    display: inline-block;
+    margin-right: 20px;
+    list-style: none;
+}
+
+.heading ul li a {
+    text-decoration: none;
+
+}
+
+h1 {
+    font-size: 300%;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    word-spacing: 10px;
+    font-weight: 300;
+    color: #eeeeee;
+}
+
+/* ----- BACKGROUND ----- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/background2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+
+
+/* ----------------------------------------- */
+/* ----- WELCOME ----- */
+/* ----------------------------------------- */
+
+/* ----- WELCOME MESSAGE ----- */
+
+.welcome {
+    margin-top: 70px;
+}
+
+.welcome p {
+    line-height: 145%;
+    text-align: center;
+}
+
+
+/* ----- EXPERIENCE ----- */
+
+.experience {
+    margin-top: 50px;
+
+}
+
+.experience p {
+    font-size: 80%;
+    margin-bottom: 10px;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.box {
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #000;
+
+}
+
+
+
+.box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+    transform: scale(1.03);
+    transition: transform 0.5s, opacity 0.5s;
+
+}
+
+.box img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* ----------------------------------------- */
+/* ----- OVERVIEW ----- */
+/* ----------------------------------------- */
+
+/* ----- FIX FLOATING ----- */
+
+.section-overview {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    margin-top: 380px;
+    padding-top: 60px;
+    background: #f7f7f7;
+    padding-bottom: 70px;
+}
+
+/* -----  CONTAINER ----- */
+
+.big-container {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* ----- OVERVIEW ----- */
+
+
+
+.icon-big {
+    display: block;
+    text-align: center;
+    font-size: 240%;
+    color: #008484;
+    margin-bottom: 15px;
+}
+
+.tour-feature p {
+    text-align: center;
+    font-size: 150%;
+}
+
+/* ----- LIST ----- */
+.tour-overview {
+    background: #fff;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    padding-top: 50px;
+    margin-top: 20px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 3px #c2c2c2;
+}
+
+.tour-overview ul li {
+    list-style: none;
+    margin-bottom: 8px;
+    margin-left: 10%;
+    padding-top: 10px;
+
+}
+
+.icon-small {
+    margin-right: 10px;
+    color: #7a9d53;
+}
+
+/* ----- NOT INCLUDED ----- */
+
+.not-included {
+    margin-top: 30px;
+}
+
+.not-included h3 {
+    margin-left: 10%;
+}
+
+.not-included ul {
+    margin-left: 3%;
+}
+
+.icon-reject {
+    color: #a73027;
+}
+
+/* ----------------------------------------- */
+/* ----- TOUR & DESTINATIONS ----- */
+/* ----------------------------------------- */
+
+.section-tour {
+    background: #f7f7f7;
+    padding-top: 50px;
+
+}
+
+/* ----- PICTURE ----- */
+
+.tour-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+
+.tour-image:hover {
+    opacity: 1;
+}
+
+/* ----- TITLE ----- */
+
+.tour-class-featured h3 {
+    display: block;
+    font-size: 160%;
+    text-align: center;
+    color: #39507f;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+}
+
+.tour-class-discovery {
+    background: ##f7f7f7;
+    background-size: cover;
+    height: 140vh;
+    width: 100%;
+}
+
+.tour-class-discovery h3 {
+    display: inline-block;
+    font-size: 160%;
+    text-align: center;
+    color: #39507f;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 60px;
+    width: 100%;
+
+}
+
+/* ----- PARAGRAPH ----- */
+
+.normal {
+    padding: 5px;
+    font-size: 80%;
+    margin-top: 10px;
+    color: #008484;
+    margin-left: 5px;
+}
+
+.strong {
+    font-family: Roboto;
+    font-size: 90%;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+s {
+    color: #df2424;
+}
+
+.price {
+    color: #df2424;
+    font-size: 110%;
+
+}
+
+.date {
+    font-weight: 800;
+}
+
+.featured-box a {
+    float: right;
+}
+
+/* ----- BOX ----- */
+
+.featured-box {
+    background-color: #fff;
+    overflow: auto;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 3px #c2c2c2;
+}
+
+
+
+/* ----------------------------------------- */
+/* ----- CUSTOMER EXPERIENCE ----- */
+/* ----------------------------------------- */
+
+/* ----- TITLE ----- */
+.section-customer h2 {
+    color: #fff;
+    padding-top: 50px;
+}
+
+.section-customer {
+    display: inline-block;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../images/customerbg.jpg);
+    background-size: cover;
+    padding: 10px;
+    background-attachment: fixed;
+}
+
+
+
+/* ----- QUOTE ----- */
+
+blockquote {
+    line-height: 1.6;
+    font-size: 90%;
+    font-style: italic;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+}
+
+.box-margin {
+    padding-right: 10px;
+
+}
+
+cite img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 2%;
+    border-radius: 50%;
+}
+
+cite {
+    display: block;
+    margin-top: 20px;
+    font-size: 80%;
+    padding-bottom: 30px;
+}
+
+blockquote:before {
+    content: "\0022";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: -20px;
+}
+
+/* ----------------------------------------- */
+/* ----- CONTACT US ----- */
+/* ----------------------------------------- */
+
+/* ----- TITLE ----- */
+
+.section-contact {
+    padding-top: 70px;
+}
+
+.section-contact p {
+    text-align: center;
+    font-size: 90%;
+    color: #5d5d5d;
+}
+
+/* ----- APP ----- */
+
+.app-container {
+    padding: 20px 2%;
+    margin-bottom: 20px;
+
+}
+
+.apple,
+.android {
+    display: block;
+    color: #008484;
+    font-size: 300%;
+
+}
+
+.apple {
+    text-align: right;
+    margin-bottom: 10px;
+    margin-right: 8%;
+}
+
+.android {
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 4%;
+
+}
+
+.app-link-a,
+.app-link-b {
+    display: block;
+
+}
+
+.app-link-a {
+    text-align: right;
+
+}
+
+.app-link-b {
+    text-align: left;
+
+}
+
+.app {
+    height: 40px;
+    width: auto;
+}
+
+/* ----- SOCIAL MEDIAS ----- */
+
+.social {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.social li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 1%;
+
+}
+
+.facebook,
+.twitter,
+.whatsapp,
+.instagram {
+    font-size: 220%;
+    color: #003d36;
+    transition: color 0.3s ease;
+}
+
+.facebook:hover {
+    color: #1877f2;
+
+}
+
+.twitter:hover {
+    color: #1da1f2;
+}
+
+.whatsapp:hover {
+    color: #25d366;
+}
+
+.instagram:hover {
+    color: #c32aa3;
+}
+
+/* ----- FORM ----- */
+.contact-form {
+    width: 60%;
+    margin-left: 20%;
+    padding-top: 30px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    font-size: 90%;
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    margin-left: 2%;
+    border-radius: 3px;
+    border: 1px solid #00a592;
+}
+
+label {
+    float: right;
+    padding: 0 10px;
+    padding-top: 8px;
+    font-weight: 400;
+}
+
+textarea {
+    height: 150px;
+}
+
+*:focus {
+    outline: none;
+}
+
+/* ----------------------------------------- */
+/* ----- FOOTER ----- */
+/* ----------------------------------------- */
+
+.footer-final {
+    display: inline-block;
+    width: 100%;
+    margin-top: 70px;
+    background: #001a17;
+}
+
+.footer-final h3 {
+    color: #888888;
+    font-size: 70%;
+    margin-bottom: 0;
+}
+
+.footer-final img {
+    margin-left: 25%;
+}
+
+.footer-address {
+    float: left;
+}
+
+.address,
+.coppy-right,
+.term {
+    color: #888888;
+    font-size: 60%;
+
+}
+
+.address {
+
+    margin-top: 2px;
+    margin-left: 2%;
+}
+
+.coppy-right {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.term {
+    margin-top: 10px;
+}
+
+.term a {
+    color: #eeeeee;
+}
